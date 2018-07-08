@@ -2,3 +2,8 @@
     display: flex;
     justify-content: flex-end;
 }
+
+img{
+    max-width: 847px;
+    max-height: 363px;
+}

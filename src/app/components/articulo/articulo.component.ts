@@ -12,4 +12,8 @@ export class ArticuloComponent implements OnInit {
   ngOnInit() {
   }
 
+  onClick(){
+    window.location.href = "https://medium.com/@delgadotrueba/titulo-de-prueba-abacdaf9ea90";
+  }
+
 }

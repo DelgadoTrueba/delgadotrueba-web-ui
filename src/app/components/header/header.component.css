@@ -1,19 +1,17 @@
 .container{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 #main-header{
+    width: 85%;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-wrap: wrap;
-    line-height: 85px;
+    align-content: center;
     
     background: white;
-    line-height: 85px;
-
-    width: 85%;
 }
 
 .media { 
@@ -21,37 +19,54 @@
     margin: 5px;
  }
  img {
-    width: 96px;
+    width: 64px;
     max-width: 100%; 
-    max-height: 96px;
+    max-height: 64px;
     
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-
-#logo h1{
-    font-weight: bold;
-    font-size: 25px;
-    color: #FB314E
-}
-
-#menu ul{
+#menu {
     display: flex;
     flex-direction: row;
 }
 
-#menu ul li{
-    list-style: none;
-    margin-left: 20px;
-    margin-right: 20px;
+button:hover{
+    color: #FB314E;
 }
 
-#menu ul li a{
-    color: black;
-    text-decoration: none;
+.button-menu{
+    display: flex;
+    justify-content: center;
+    align-content: center; 
 }
 
-#menu ul li a:hover{
+#button-menu a{
+    cursor: pointer;
+}
+
+#button-menu a:hover{
+    color: #FB314E;
+}
+
+#button-menu mat-icon{
+    font-size: 48px;
+    margin-top: 30px;
+    margin-right: 25px;
+}
+
+#menu-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-flex button {
+    background: #373737;
+    color: white;
+}
+#menu-flex button:hover {
+    background: #373737;
     color: #FB314E;
 }
 
@@ -74,4 +89,31 @@
         justify-content: center;
         flex-wrap: wrap;
     }
+}
+
+@media (max-width: 599px){
+    
+    #logo{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    #menu{
+        display: flex;
+        justify-content: center;   
+        width: 100%;
+    }
+    
+    #menu ul{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1015px){
+    #menu button{
+        font-size: 0.8em;
+    }   
 }

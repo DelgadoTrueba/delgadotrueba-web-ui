@@ -4,16 +4,21 @@
         <div class=”media”>
             <img src="assets/img/delgadotrueba-1024x1024.png">
         </div>
-        <div id="menu">
-            <ul>
-                <li>
-                    <a href="#app-mostrador-articulos">Ultimos Articulos</a>
-                </li>
-                <li>
-                    <a href="#app-todos-articulos">Archivos del Blog</a>
-                </li>
-            </ul>
+        <div id="menu" fxShow.lt-md="false" >
+                <button mat-button><mat-icon>exit_to_app</mat-icon>&nbsp;MI BLOG EN MEDIUM</button>
+                <button mat-button><mat-icon>exit_to_app</mat-icon>&nbsp;ULTIMOS ARTICULOS</button>
+                <button mat-button><mat-icon>exit_to_app</mat-icon>&nbsp;ARCHIVO DEL BLOG</button>
+                <button mat-button><mat-icon>exit_to_app</mat-icon>&nbsp;SOBRE MI</button>
+        </div>
+        <div id="button-menu" fxShow.gt-sm="false" >
+                <a (click)="onClick()"><mat-icon>menu</mat-icon></a>
         </div>
     </header>
+    <div id="menu-flex" *ngIf="mostrar"  fxShow.gt-sm="false">
+            <button mat-button><mat-icon>exit_to_app</mat-icon>&nbsp;MI BLOG EN MEDIUM</button>
+            <button mat-button><mat-icon>exit_to_app</mat-icon>&nbsp;ULTIMOS ARTICULOS</button>
+            <button mat-button><mat-icon>exit_to_app</mat-icon>&nbsp;ARCHIVO DEL BLOG</button>
+            <button mat-button><mat-icon>exit_to_app</mat-icon>&nbsp;SOBRE MI</button>
+    </div>
 
 </div>

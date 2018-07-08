@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  mostrar = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClick(){
+    if(this.mostrar==false) this.mostrar=true;
+    else this.mostrar=false;
   }
 
 }

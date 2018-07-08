@@ -19,4 +19,12 @@ export class HeaderComponent implements OnInit {
     else this.mostrar=false;
   }
 
+  href(paramId){
+    window.scroll(0, document.getElementById(paramId).offsetTop)
+  }
+
+  medium(){
+    window.location.href = "https://medium.com/@delgadotrueba/";
+  }
+
 }

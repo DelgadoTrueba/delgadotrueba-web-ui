@@ -1,0 +1,19 @@
+.flex{
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.container{
+    width: 85%;
+}
+
+.subheader{
+    font-size: 34px;
+    color: #333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(251, 49, 78, 0.3);
+}

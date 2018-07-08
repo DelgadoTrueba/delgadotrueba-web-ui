@@ -5,4 +5,12 @@
 
 .frase{
     width: 85%;
+    text-align: center;
+
+    font-weight: normal;
+}
+
+.bold{
+    font-size: 1.5em;
+    color: rgba(251, 49, 78, 1);
 }

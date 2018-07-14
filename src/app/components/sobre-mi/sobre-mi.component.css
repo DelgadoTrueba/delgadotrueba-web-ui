@@ -55,7 +55,7 @@ a:hover{
 }
 
 button{
-    width: 300px;
+    max-width: 300px;
     margin: auto;
 }
 
@@ -63,4 +63,11 @@ button{
     .columns{
         flex: 1 0 100%;
     }   
+}
+
+@media (max-width: 350px){  
+       
+    button{
+        font-size:  0.65em;
+    }
 }

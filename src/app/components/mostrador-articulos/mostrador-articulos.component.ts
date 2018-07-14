@@ -10,24 +10,31 @@ import {DelgadotruebaService} from '../../services/delgadotrueba.service'
 })
 export class MostradorArticulosComponent implements OnInit {
 
-  foods = [
-    {value: 'steak-0', viewValue: 'Steak'},
-    {value: 'pizza-1', viewValue: 'Pizza'},
-    {value: 'tacos-2', viewValue: 'Tacos'}
-  ];
+  public tags;
+  public articles;
 
   constructor(
     private _delgadotruebaService :DelgadotruebaService
   ) { }
 
   ngOnInit() {
+    this._delgadotruebaService.getTags().subscribe(
+      (tags) => { 
+        this.tags = tags;
+      },
+      (err) => { console.log(err) }
+    )
+
+    this._delgadotruebaService.getArticles().subscribe(
+      (articles) => { 
+        this.articles = articles;
+      },
+      (err) => { console.log(err) }
+    )
   }
 
   service(){
-    this._delgadotruebaService.getArchivo().subscribe(
-      (articles) => { console.log(articles) },
-      (err) => { console.log(err) }
-    )
+    this.articles = null;
   }
 
 }

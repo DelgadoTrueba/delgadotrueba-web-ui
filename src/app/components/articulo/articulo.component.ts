@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Article } from '../../models/article';
 
 @Component({
   selector: 'app-articulo',
@@ -7,13 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArticuloComponent implements OnInit {
 
+  @Input() article: Article;
+
   constructor() { }
 
   ngOnInit() {
   }
 
   onClick(){
-    window.location.href = "https://medium.com/@delgadotrueba/titulo-de-prueba-abacdaf9ea90";
+    window.location.href = this.article.link+"";
   }
 
 }

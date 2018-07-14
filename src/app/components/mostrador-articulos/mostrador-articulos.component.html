@@ -9,28 +9,16 @@
       <div class="displayer">
           <mat-form-field>
               <mat-select placeholder="Filtrar por Etiquetas">
-                  <mat-option *ngFor="let food of foods" [value]="food.value">
-                      {{food.viewValue}}
+                  <mat-option *ngFor="let tag of tags" [value]="tag._id">
+                      {{tag._id}}
                   </mat-option>
               </mat-select>
             </mat-form-field>
       </div>
     
     <div class="articulos">
-        <div class="articulo">
-            <app-articulo></app-articulo>
-          </div>
-          <div class="articulo">
-            <app-articulo></app-articulo>
-          </div>
-          <div class="articulo">
-            <app-articulo></app-articulo>
-          </div>
-          <div class="articulo">
-            <app-articulo></app-articulo>
-          </div>
-          <div class="articulo">
-            <app-articulo></app-articulo>
+        <div class="articulo" *ngFor="let article of articles">
+            <app-articulo [article]="article"></app-articulo>
           </div>
     </div>
 

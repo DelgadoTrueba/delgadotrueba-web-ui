@@ -41,6 +41,11 @@
     text-align: center;
 }
 
+.button{
+    text-align: end;
+    margin-bottom: 20px;
+}
+
 @media (min-width: 600px) and (max-width: 1279px){
     .articulo{
         width: 47%;

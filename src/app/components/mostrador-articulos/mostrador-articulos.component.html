@@ -2,7 +2,19 @@
   
   <div class="anchura">
   
-      <h2 class="subheader">Últimos Artículos</h2>
+      <h2 class="subheader">
+        Últimos Artículos
+      </h2>
+
+      <div class="displayer">
+          <mat-form-field>
+              <mat-select placeholder="Filtrar por Etiquetas">
+                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                      {{food.viewValue}}
+                  </mat-option>
+              </mat-select>
+            </mat-form-field>
+      </div>
     
     <div class="articulos">
         <div class="articulo">

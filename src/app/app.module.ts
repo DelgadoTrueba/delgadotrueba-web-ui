@@ -13,6 +13,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatListModule} from '@angular/material/list';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatSelectModule} from '@angular/material/select';
 
 
 //Flexbox
@@ -57,6 +58,7 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
     MatListModule,
     MatStepperModule,
     MatTooltipModule,
+    MatSelectModule,
 
     FlexLayoutModule,
   ],

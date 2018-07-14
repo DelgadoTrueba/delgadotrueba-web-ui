@@ -1,6 +1,7 @@
 //Modulos
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 //Services
 import { DelgadotruebaService } from './services/delgadotrueba.service';
@@ -49,6 +50,7 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
   //Importar Modulos, Material Design y Flexbox
   imports: [
     BrowserModule,
+    HttpClientModule,
 
     BrowserAnimationsModule,
     MatButtonModule,

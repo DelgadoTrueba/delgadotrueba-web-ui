@@ -59,3 +59,7 @@ mat-toolbar-row{
        opacity: 0.8;
         transform: scale(1.1, 1.1);
     }
+
+    img{
+        width: 32px;
+    }

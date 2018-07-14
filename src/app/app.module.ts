@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 //Services
+import { DelgadotruebaService } from './services/delgadotrueba.service';
 
 //Material Design
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -63,7 +64,7 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
     FlexLayoutModule,
   ],
   //Importar Servicios
-  providers: [],
+  providers: [DelgadotruebaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

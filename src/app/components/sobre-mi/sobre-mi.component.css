@@ -1,11 +1,20 @@
 .flex{
     display: flex;
     justify-content: center;
-    height: 200px;
 }
 
 .container{
     width: 85%;
+}
+
+.column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.columns{
+    flex: 1 0 50%;
 }
 
 .subheader{
@@ -16,4 +25,42 @@
     margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(251, 49, 78, 0.3);
+}
+
+p{
+    text-align: center;
+    font-size: 1.50em;
+}
+
+a{
+    text-decoration: none;
+    color: #0374DD;
+}
+
+a:hover{
+    border-bottom: 1px solid #0374DD;
+}
+
+.stepper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.linea{
+    height:20px;
+    border-right: solid 1px black;
+    margin: auto;
+}
+
+button{
+    width: 300px;
+    margin: auto;
+}
+
+@media (max-width: 1015px){
+    .columns{
+        flex: 1 0 100%;
+    }   
 }

@@ -8,9 +8,9 @@
 
       <div class="displayer">
           <mat-form-field>
-              <mat-select placeholder="Filtrar por Etiquetas">
-                    <mat-option [value]="Todos">
-                            Todos
+              <mat-select placeholder="Filtrar por Etiquetas" [(value)]="selectValue">
+                    <mat-option [value]="'todos'">
+                            todos
                     </mat-option>
                   <mat-option *ngFor="let tag of tags" [value]="tag._id">
                       {{tag._id}}

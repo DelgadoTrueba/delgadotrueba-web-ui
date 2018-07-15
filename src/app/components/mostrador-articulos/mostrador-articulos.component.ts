@@ -13,6 +13,8 @@ export class MostradorArticulosComponent implements OnInit {
   public tags;
   public articles;
 
+  public selectValue = "todos";
+
   constructor(
     private _delgadotruebaService :DelgadotruebaService
   ) { }

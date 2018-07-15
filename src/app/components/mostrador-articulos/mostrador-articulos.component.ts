@@ -57,8 +57,10 @@ export class MostradorArticulosComponent implements OnInit {
     }
   }
 
+  /*
   service(){
     this.articles = null;
   }
+  */
 
 }

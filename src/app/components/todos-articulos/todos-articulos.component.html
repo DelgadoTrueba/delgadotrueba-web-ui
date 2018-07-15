@@ -3,48 +3,28 @@
       <h2 class="subheader">Archivo del Blog</h2>
       <mat-accordion>
 
-          <mat-expansion-panel>
+          <mat-expansion-panel *ngFor="let info of archivo">
       
               <mat-expansion-panel-header>
                 <mat-panel-title>
-                  2018
+                  {{info._id}}
                 </mat-panel-title>
                 <mat-panel-description>
       
                 </mat-panel-description>
               </mat-expansion-panel-header>
 
-              <mat-nav-list>
-                  <a href="#" class="enlace-articulo"> 
-                    <span>07/07/2018</span>
+              <mat-nav-list *ngFor="let article of info.articles">
+                  <a href="{{article.link}}" class="enlace-articulo"> 
+                    <span>{{article.date.day}}/{{article.date.month}}/{{article.date.year}}</span>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span><b>Progresive Web App</b></span>
+                    <span><b>{{article.title}}</b></span>
                   </a>
                   
                </mat-nav-list>
               
           </mat-expansion-panel>
       
-          <mat-expansion-panel>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                2017
-              </mat-panel-title>
-              <mat-panel-description>
-             
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            
-            <mat-nav-list>
-                <a href="#" class="enlace-articulo"> 
-                    <span>07/07/2018</span>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <span><b>Progresive Web App</b></span>
-                  </a>
-                
-             </mat-nav-list>
-
-          </mat-expansion-panel>
         </mat-accordion>
   </div>
 </div>

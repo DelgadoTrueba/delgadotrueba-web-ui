@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+//Import Service
+import {DelgadotruebaService} from '../../services/delgadotrueba.service'
+
 @Component({
   selector: 'app-todos-articulos',
   templateUrl: './todos-articulos.component.html',
@@ -7,9 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodosArticulosComponent implements OnInit {
 
-  constructor() { }
+  public archivo;
+
+  constructor(
+    private _delgadotruebaService :DelgadotruebaService
+  ) { }
 
   ngOnInit() {
+    this._delgadotruebaService.getArchivo().subscribe(
+      (archivo) => { 
+        this.archivo = archivo;
+        console.log(archivo);
+      },
+      (err) => { console.log(err) }
+    )
   }
 
 }

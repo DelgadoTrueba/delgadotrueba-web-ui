@@ -1,7 +1,7 @@
 <div class="flex">
   <div class="container">
       <h2 class="subheader">Archivo del Blog</h2>
-      <mat-accordion>
+      <mat-accordion *ngIf="!error">
 
           <mat-expansion-panel *ngFor="let info of archivo">
       
@@ -26,5 +26,9 @@
           </mat-expansion-panel>
       
         </mat-accordion>
+
+        <div *ngIf="error" style="text-align: center">
+            <p>Error con el Servidor no se han podido obtene el Archivo del Blog. Vuelva en unos minutos</p>
+      </div>
   </div>
 </div>

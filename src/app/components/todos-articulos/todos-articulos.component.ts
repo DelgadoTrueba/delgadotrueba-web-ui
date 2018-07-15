@@ -11,6 +11,7 @@ import {DelgadotruebaService} from '../../services/delgadotrueba.service'
 export class TodosArticulosComponent implements OnInit {
 
   public archivo;
+  public error = false;
 
   constructor(
     private _delgadotruebaService :DelgadotruebaService
@@ -21,7 +22,7 @@ export class TodosArticulosComponent implements OnInit {
       (archivo) => { 
         this.archivo = archivo;
       },
-      (err) => { console.log(err) }
+      (err) => { console.log(err); this.error=true; }
     )
   }
 

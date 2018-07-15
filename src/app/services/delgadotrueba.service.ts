@@ -45,4 +45,10 @@ export class DelgadotruebaService {
 
   }
 
+  getArticuloByTag(tag: string): Observable<String[]> {
+    
+    return this.http.get<any>(this.delgadotrueba_api+"/articles/findBy/"+tag);
+
+  }
+
 }

@@ -8,7 +8,7 @@
 
       <div class="displayer">
           <mat-form-field>
-              <mat-select placeholder="Filtrar por Etiquetas" [(value)]="selectValue">
+              <mat-select placeholder="Filtrar por Etiquetas" [(value)]="selectValue" (selectionChange)="selectChange($event.value)">
                     <mat-option [value]="'todos'">
                             todos
                     </mat-option>
@@ -19,15 +19,27 @@
             </mat-form-field>
       </div>
     
-    <div class="articulos">
-        <div class="articulo" *ngFor="let article of articles">
-            <app-articulo [article]="article"></app-articulo>
-          </div>
+   
+    <div class="articulos" *ngIf="!articulos && !error">
+            <mat-spinner></mat-spinner>
     </div>
 
-    <div class="button">
-        <button mat-raised-button color="primary" (click)="service()">Mostrar más</button>
+   <div *ngIf="!error">
+        <div class="articulos" *ngIf="!error">
+                <div class="articulo" *ngFor="let article of articles">
+                    <app-articulo [article]="article"></app-articulo>
+                  </div>
+        </div>
+        <div class="button">
+                <button mat-raised-button color="primary" (click)="service()">Mostrar más</button>
+        </div>
+   </div>
+
+    <div class="articulos" *ngIf="error">
+            <p>Error con el Servidor no se han podido obtener los articulos</p>
     </div>
+
+    
 
   </div>
 </div>

@@ -16,6 +16,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatSelectModule} from '@angular/material/select';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 
 //Flexbox
@@ -62,6 +63,7 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
     MatStepperModule,
     MatTooltipModule,
     MatSelectModule,
+    MatProgressSpinnerModule,
 
     FlexLayoutModule,
   ],

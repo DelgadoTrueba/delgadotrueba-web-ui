@@ -12,6 +12,7 @@ export class MostradorArticulosComponent implements OnInit {
 
   public tags;
   public articles;
+  public error = false;
 
   public selectValue = "todos";
 
@@ -27,12 +28,33 @@ export class MostradorArticulosComponent implements OnInit {
       (err) => { console.log(err) }
     )
 
+    this.articles = null;
     this._delgadotruebaService.getArticles().subscribe(
       (articles) => { 
         this.articles = articles;
       },
-      (err) => { console.log(err) }
+      (err) => { console.log(err); this.error = true }
     )
+  }
+
+  selectChange(tag){
+    this.articles = null;
+    if(tag === "todos"){
+      this._delgadotruebaService.getArticles().subscribe(
+        (articles) => { 
+          this.articles = articles;
+        },
+        (err) => { console.log(err); this.error = true }
+      )
+    }
+    else{
+      this._delgadotruebaService.getArticuloByTag(tag).subscribe(
+        (articles) => { 
+          this.articles = articles;
+        },
+        (err) => { console.log(err) }
+      )
+    }
   }
 
   service(){

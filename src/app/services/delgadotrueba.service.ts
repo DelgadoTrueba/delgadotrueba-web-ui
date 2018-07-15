@@ -35,13 +35,13 @@ export class DelgadotruebaService {
 
   getTags(): Observable<String[]> {
     
-    return this.http.get<any>(this.delgadotrueba_api+"/articles"+"/tags");
+    return this.http.get<any>(this.delgadotrueba_api+"/tags");
 
   }
 
   getArchivo(): Observable<String[]> {
     
-    return this.http.get<any>(this.delgadotrueba_api+"/articles"+"/archivo");
+    return this.http.get<any>(this.delgadotrueba_api+"/archivo");
 
   }
 

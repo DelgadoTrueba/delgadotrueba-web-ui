@@ -20,7 +20,6 @@ export class TodosArticulosComponent implements OnInit {
     this._delgadotruebaService.getArchivo().subscribe(
       (archivo) => { 
         this.archivo = archivo;
-        console.log(archivo);
       },
       (err) => { console.log(err) }
     )

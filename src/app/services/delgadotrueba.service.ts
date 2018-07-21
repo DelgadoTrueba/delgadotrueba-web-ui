@@ -16,7 +16,7 @@ const httpOptions = {
 export class DelgadotruebaService {
 
   // URL to web api
-  private baseURL = "http://localhost:3000";
+  private baseURL = "http://delgadotrueba.com:3000";
 
   private delgadotrueba_api = this.baseURL; 
 

@@ -14,3 +14,14 @@
     font-size: 1.5em;
     color: rgba(251, 49, 78, 1);
 }
+
+@media (max-width: 220px){
+    
+    h2{
+       font-size: 1em;
+    }
+
+    .bold{
+        font-size: 1.25em;
+    }
+}

@@ -118,3 +118,9 @@ button:hover{
         font-size: 0.8em;
     }   
 }
+
+@media (max-width: 230px){
+    button{
+        font-size: 0.5em;
+    }   
+}

@@ -63,3 +63,9 @@
        width: 100px !important;
     }
 }
+
+@media (max-width: 210px){
+    .subheader{
+       font-size: 27px;
+    }
+}

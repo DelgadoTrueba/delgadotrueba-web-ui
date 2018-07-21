@@ -79,3 +79,10 @@ button{
         font-size:  0.55em;
     }
 }
+
+@media (max-width: 275px){  
+       
+    p{
+        font-size:  0.8em;
+    }
+}

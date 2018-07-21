@@ -18,10 +18,10 @@
 @media (max-width: 220px){
     
     h2{
-       font-size: 1em;
+       font-size: 0.85em;
     }
 
     .bold{
-        font-size: 1.25em;
+        font-size: 1em;
     }
 }

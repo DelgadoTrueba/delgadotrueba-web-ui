@@ -6,3 +6,10 @@ body{
     margin: 0px;
     padding: 0px;
 }
+
+@media (max-width: 365px){      
+    .mat-tooltip{
+        width: 150px !important;
+        font-size: 0.65em !important;
+    }
+}

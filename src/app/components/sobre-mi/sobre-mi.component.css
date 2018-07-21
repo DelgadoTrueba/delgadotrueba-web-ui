@@ -57,6 +57,7 @@ a:hover{
 button{
     max-width: 300px;
     margin: auto;
+    line-height: 2.15 !important;
 }
 
 @media (max-width: 1015px){
@@ -69,5 +70,12 @@ button{
        
     button{
         font-size:  0.65em;
+    }
+}
+
+@media (max-width: 275px){  
+       
+    button{
+        font-size:  0.55em;
     }
 }

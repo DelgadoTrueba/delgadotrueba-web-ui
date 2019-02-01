@@ -9,8 +9,8 @@
       <div class="displayer">
           <mat-form-field>
               <mat-select placeholder="Filtrar por Etiquetas" [(value)]="selectValue" (selectionChange)="selectChange($event.value)">
-                    <mat-option [value]="'todas'">
-                            todas
+                    <mat-option [value]="'All'">
+                      All
                     </mat-option>
                   <mat-option *ngFor="let tag of tags" [value]="tag._id">
                       {{tag._id}}

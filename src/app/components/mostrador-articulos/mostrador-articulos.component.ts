@@ -14,7 +14,7 @@ export class MostradorArticulosComponent implements OnInit {
   public articles;
   public error = false;
 
-  public selectValue = "todas";
+  public selectValue = "All";
 
   constructor(
     private _delgadotruebaService :DelgadotruebaService
@@ -39,7 +39,7 @@ export class MostradorArticulosComponent implements OnInit {
 
   selectChange(tag){
     this.articles = null;
-    if(tag === "todas"){
+    if(tag === "All"){
       this._delgadotruebaService.getArticles().subscribe(
         (articles) => { 
           this.articles = articles;

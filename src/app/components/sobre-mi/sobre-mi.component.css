@@ -38,6 +38,16 @@ p{
 mat-card{
     padding-top: 10px;
     padding-bottom: 2px;
+
+    border: solid 1px #ccc;
+}
+
+mat-card-header{
+    display: flex !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+
+
 }
 
 
@@ -71,8 +81,14 @@ button{
 
 
 .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
+    background-image: url('/assets/img/foto.jpeg');
+    background-size: 90px 90px;
+    border: solid 1px #ccc;
+  }
+
+  .mat-card-avatar{
+      width: 90px;
+      height: 90px;
   }
 
 @media (max-width: 1015px){

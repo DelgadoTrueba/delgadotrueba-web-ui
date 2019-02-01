@@ -4,6 +4,10 @@
 }
 
 img{
-    max-width: 847px;
-    max-height: 363px;
+    max-width: 600px !important;
+    max-height: 195px !important;
+}
+
+mat-card{
+    min-height: 380px !important;
 }

@@ -9,12 +9,17 @@
 
 .column{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    /*flex-direction: row;*/
     flex-wrap: wrap;
 }
 
 .columns{
     flex: 1 0 50%;
+    /*extra*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .subheader{
@@ -25,6 +30,17 @@
     margin-bottom: 30px;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(251, 49, 78, 0.3);
+}
+
+.subheader2{
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.texto{
+    width: 55%;
 }
 
 p{
@@ -62,13 +78,14 @@ a:hover{
 
 .stepper{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin-top: 25px;
 }
 
 .linea{
-    height:20px;
+    width: 20px;
+    height: 20px;
     border-right: solid 1px black;
     margin: auto;
 }
@@ -90,6 +107,16 @@ button{
       width: 90px;
       height: 90px;
   }
+
+  @media (max-width: 850px){
+    .stepper{
+        flex-direction: column;
+    }  
+    mat-card-header{
+        display: flex !important;
+        flex-wrap: wrap !important;
+    }
+}
 
 @media (max-width: 1015px){
     .columns{

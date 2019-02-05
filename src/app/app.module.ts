@@ -33,6 +33,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ArticuloComponent } from './components/articulo/articulo.component';
 import { TodosArticulosComponent } from './components/todos-articulos/todos-articulos.component';
 import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
+import { PorfolioComponent } from './components/porfolio/porfolio.component';
 
 
 @NgModule({
@@ -46,7 +47,8 @@ import { SobreMiComponent } from './components/sobre-mi/sobre-mi.component';
     FooterComponent,
     ArticuloComponent,
     TodosArticulosComponent,
-    SobreMiComponent
+    SobreMiComponent,
+    PorfolioComponent
   ],
   //Importar Modulos, Material Design y Flexbox
   imports: [

@@ -12,4 +12,8 @@ export class PorfolioComponent implements OnInit {
   ngOnInit() {
   }
 
+  porfolio(){
+    window.location.href = "https://github.com/DelgadoTrueba/angular6-EsqueletoBasico";
+  }
+
 }

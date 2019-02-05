@@ -27,14 +27,6 @@
     
 }
 
-.mat-list-item:hover{
-    cursor: pointer;
-}
-
-.mat-list-item:click{
-    cursor: pointer;
-}
-
 mat-list{
     margin-bottom: 15px;
 }  

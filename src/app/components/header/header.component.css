@@ -71,26 +71,6 @@ button:hover{
     color: #FB314E;
 }
 
-@media (max-width: 599px){
-    
-    #logo{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    
-    #menu{
-        display: flex;
-        justify-content: center;   
-        width: 100%;
-    }
-    
-    #menu ul{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-}
 
 @media (max-width: 599px){
     
@@ -113,7 +93,7 @@ button:hover{
     }
 }
 
-@media (max-width: 1015px){
+@media (max-width: 1150px){
     #menu button{
         font-size: 0.8em;
     }   

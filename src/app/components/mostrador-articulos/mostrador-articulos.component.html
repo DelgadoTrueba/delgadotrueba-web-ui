@@ -10,7 +10,7 @@
           <mat-form-field>
               <mat-select placeholder="Filtrar por Etiquetas" [(value)]="selectValue" (selectionChange)="selectChange($event.value)">
                     <mat-option [value]="'All'">
-                      All
+                      Todos
                     </mat-option>
                   <mat-option *ngFor="let tag of tags" [value]="tag._id">
                       {{tag._id}}

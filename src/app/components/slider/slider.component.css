@@ -27,4 +27,14 @@ mat-toolbar{
     h2{
         font-size:  1em;
     }
+
+    mat-toolbar{   
+        height: 200px;
+    }
+}
+
+@media (max-width: 350px){  
+    mat-toolbar{   
+        height: 150px;
+    }
 }

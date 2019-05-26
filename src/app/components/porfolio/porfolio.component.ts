@@ -16,4 +16,12 @@ export class PorfolioComponent implements OnInit {
     window.location.href = "https://github.com/DelgadoTrueba/Api-Rest-with-Spring-Boot";
   }
 
+  delgadotruebaUI(){
+    window.location.href = "https://github.com/DelgadoTrueba/delgadotrueba-ui";
+  }
+
+  delgadotruebaAPI(){
+    window.location.href = "https://github.com/DelgadoTrueba/delgadotrueba-api";
+  }
+
 }

@@ -92,9 +92,11 @@ a:hover{
 
 button{
     max-width: 350px;
+    min-width: 200px;
     line-height: 2.15 !important;
     margin-left: 1%;
     margin-right: 1%;
+    padding: 0%;
 }
 
 

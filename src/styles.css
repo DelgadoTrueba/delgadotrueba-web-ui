@@ -13,3 +13,7 @@ body{
         font-size: 0.65em !important;
     }
 }
+
+.mat-tooltip {
+    font-size: 1.0em !important;
+}
